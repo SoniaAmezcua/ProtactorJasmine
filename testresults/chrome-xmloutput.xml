@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="Login Admin OKBOY" timestamp="2021-02-06T20:14:26" hostname="localhost" time="13.692" errors="0" tests="1" skipped="0" failures="1">
+  <testcase classname="Login Admin OKBOY" name="should allow login" time="13.691">
+   <failure type="exception" message="Failed: invalid selector: Unable to locate an element with the xpath expression document.querySelector(&amp;quot;body &amp;gt; div.login &amp;gt; div &amp;gt; form &amp;gt; div:nth-child(2) &amp;gt; label&amp;quot;) because of the following error:
+SyntaxError: Failed to execute &amp;apos;evaluate&amp;apos; on &amp;apos;Document&amp;apos;: The string &amp;apos;document.querySelector(&amp;quot;body &amp;gt; div.login &amp;gt; div &amp;gt; form &amp;gt; div:nth-child(2) &amp;gt; label&amp;quot;)&amp;apos; is not a valid XPath expression.
+  (Session info: chrome=88.0.4324.146)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: &amp;apos;3.141.59&amp;apos;, revision: &amp;apos;e82be7d358&amp;apos;, time: &amp;apos;2018-11-14T08:25:53&amp;apos;
+System info: host: &amp;apos;DESKTOP-8H07T0L&amp;apos;, ip: &amp;apos;192.168.1.72&amp;apos;, os.name: &amp;apos;Windows 10&amp;apos;, os.arch: &amp;apos;amd64&amp;apos;, os.version: &amp;apos;10.0&amp;apos;, java.version: &amp;apos;1.8.0_252&amp;apos;
+Driver info: driver.version: unknown"><![CDATA[InvalidSelectorError: invalid selector: Unable to locate an element with the xpath expression document.querySelector("body > div.login > div > form > div:nth-child(2) > label") because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string 'document.querySelector("body > div.login > div > form > div:nth-child(2) > label")' is not a valid XPath expression.
+  (Session info: chrome=88.0.4324.146)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-8H07T0L', ip: '192.168.1.72', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_252'
+Driver info: driver.version: unknown
+    at Object.checkLegacyResponse (C:\Users\vetta\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\error.js:546:15)
+    at parseHttpResponse (C:\Users\vetta\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\http.js:509:13)
+    at C:\Users\vetta\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\http.js:441:30
+    at processTicksAndRejections (internal/process/task_queues.js:94:5)
+From: Task: WebDriver.findElements(By(xpath, document.querySelector("body > div.login > div > form > div:nth-child(2) > label")))
+    at thenableWebDriverProxy.schedule (C:\Users\vetta\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\webdriver.js:807:17)
+    at thenableWebDriverProxy.findElements (C:\Users\vetta\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\webdriver.js:1048:19)
+    at C:\Users\vetta\AppData\Roaming\npm\node_modules\protractor\built\element.js:159:44
+    at ManagedPromise.invokeCallback_ (C:\Users\vetta\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\vetta\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\vetta\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\vetta\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\vetta\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7Error
+    at ElementArrayFinder.applyAction_ (C:\Users\vetta\AppData\Roaming\npm\node_modules\protractor\built\element.js:459:27)
+    at ElementArrayFinder.<computed> [as getText] (C:\Users\vetta\AppData\Roaming\npm\node_modules\protractor\built\element.js:91:29)
+    at ElementFinder.<computed> [as getText] (C:\Users\vetta\AppData\Roaming\npm\node_modules\protractor\built\element.js:831:22)
+    at Loginpage.getEmailLabel (C:\ProtactorJasmine\test\login\Loginpage.js:17:27)
+    at UserContext.<anonymous> (C:\ProtactorJasmine\test\login\Login Spec.js:6:28)
+    at processTicksAndRejections (internal/process/task_queues.js:94:5)
+From: Task: Run it("should allow login") in control flow
+    at UserContext.<anonymous> (C:\Users\vetta\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:94:19)
+    at attempt (C:\Users\vetta\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\vetta\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at QueueRunner.execute (C:\Users\vetta\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4199:10)
+    at Spec.queueRunnerFactory (C:\Users\vetta\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:909:35)
+    at Spec.execute (C:\Users\vetta\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:526:10)
+    at UserContext.fn (C:\Users\vetta\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:5340:37)
+    at attempt (C:\Users\vetta\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\vetta\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at QueueRunner.execute (C:\Users\vetta\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4199:10)
+From asynchronous test: 
+Error
+    at Suite.<anonymous> (C:\ProtactorJasmine\test\login\Login Spec.js:3:3)
+    at addSpecsToSuite (C:\Users\vetta\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1107:25)
+    at Env.describe (C:\Users\vetta\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1074:7)
+    at describe (C:\Users\vetta\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4399:18)
+    at Object.<anonymous> (C:\ProtactorJasmine\test\login\Login Spec.js:2:1)
+    at Module._compile (internal/modules/cjs/loader.js:955:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10)
+    at Module.load (internal/modules/cjs/loader.js:811:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:723:14)]]>
+   </failure>
+  </testcase>
+ </testsuite>
+</testsuites>
